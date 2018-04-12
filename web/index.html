@@ -14,12 +14,98 @@
     </style>
     <body>
         <h1 style="text-align:center;">This is the content of index.html</h1>
-        <p>hello prince</p>
-        <i><p>you are making your html</p></i>
-        <b><p>愿你的代码 福泽苍生</p></b>
+        <p style="text-align:center">hello prince</p>
+        <i><p style="text-align:center">you are making your html</p></i>
+
+        <b><p style="text-align:center"><span style="color:green;font-weight:bold">愿你的代码 福泽苍生</span></p></b>
+
         <!-- 插入一张图片 -->
-        <p><img src="master.jpg" alt="magic" width="600" height="375" /></p><hr>     
+        <p style="text-align:center"><img src="master.jpg" alt="magic" width="600" height="375" /></p><hr> 
+        
+        <b><p style="text-align:left">By the way, C++ is the best !!</p></b>
+       
+
+        <div id="container" style="width:500px">
+ 
+            <div id="header" style="background-color:#FFA500;">
+            <h1 style="margin-bottom:0;">prince design</h1></div>
+                
+            <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+            <b>menu</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript</div>
+                
+            <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+            御剑乘风去 伏魔天地间  
+            </div>
+                
+            <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            846863428@qq.com</div>
+            
+        </div>
+
+        <!--
+        <ol>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol> 
+        
+        <form action="">
+            First name: <input type="text" name="firstname"><br>
+            Last name: <input type="text" name="lastname">
+        </form>
+        -->
+
+        <form action="">
+            Username: <input type="text" name="user"><br>
+            Password: <input type="password" name="password"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <form>
+            <input type="radio" name="sex" value="male">Male<br>
+            <input type="radio" name="sex" value="female">Female
+        </form>
+
+        <form>
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car 
+        </form>
+
+        <div style="color:#0000FF">
+            <ul style="list-style-type:disc">
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Lemons</li>
+                <li>Oranges</li>
+            </ul>  
+        </div>
+
+        <iframe src="test.html" width="400" height="300" name="iframe_a"></iframe><br>
+
+        
+        <!--
+        <script>document.write("Hello World!");</script>
+        -->
+        <p id="demo">
+                JavaScript 可以触发事件，就像按钮点击。</p>
+        <script>
+            function myFunction()
+            {
+                x=document.getElementById("demo")
+                x.innerHTML="Hello JavaScript!"
+                x.style.color="#ff0000";
+            }
+        </script>
+        
+        <button type="button" onclick="myFunction()">point</button>
+        <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+
         <!-- 链接 -->
-        <a href="http://princeee.free.ngrok.cc" id="web-server" >web server</a>
+        <a href="http://princeee.free.ngrok.cc" target="iframe_a" id="web-server" >my web server</a>
+        <label id="label0" style="text-align: center;display: block;width: 100%;margin-bottom: 0px;">the &#169; end</label>
     </body>
 </html>
