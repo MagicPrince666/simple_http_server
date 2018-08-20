@@ -1,2 +1,2 @@
-objs/*.o
+*.o
 server

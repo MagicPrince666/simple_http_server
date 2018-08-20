@@ -5,9 +5,9 @@ TARGET	= server
 DIR		= . 
 INC		= -I.
 CFLAGS	= -std=c++11 -O3 -g -Wall
-LDFLAGS = -lboost_filesystem -lboost_system -lboost_thread -lpthread -ldl -lz -lm
+LDFLAGS = -lboost_filesystem -lboost_system -lpthread -ldl -lz -lm
 
-OBJPATH	= ./objs
+OBJPATH	= .
 
 FILES	= $(foreach dir,$(DIR),$(wildcard $(dir)/*.cpp))
 
